@@ -2,7 +2,7 @@
 
 __author__ = "730358970"
 
-SECRET: str = "python"
+SECRET: str = "python"  # initialization of variables, gathering input, and invalid input while loop
 
 guess_word: str = input(f"What is your {len(SECRET)}-letter guess? ")
 
@@ -17,24 +17,24 @@ i: int = 0
 result: str = ""
 
 
-while i < len(SECRET):                                        # while loop to check indices for correct matches
+while i < len(SECRET):  # while loop to check indices for correct matches
     if guess_word[i] == SECRET[i]:
-        result = result + GREEN_BOX + " "
+        result = result + GREEN_BOX
     else:
-        guess_character: bool = False
+        char_location: bool = False
         alt_idx: int = 0
-        while not guess_character and alt_idx < len(SECRET):  # nested while loop to check for correct letters
-            if guess_word[i] == SECRET[alt_idx]:              # at incorrect positions
-                guess_character = True
+        while not char_location and alt_idx < len(SECRET):  # nested while loop to check for correct letters at incorrect positions
+            if guess_word[i] == SECRET[alt_idx]:
+                char_location = True
             else:
                 alt_idx = alt_idx + 1
-        if guess_character:
-            result = result + YELLOW_BOX + " "
+        if char_location:
+            result = result + YELLOW_BOX
         else:
-            result = result + WHITE_BOX + " "
+            result = result + WHITE_BOX
     i = i + 1
 
-print(result)
+print(result)  # prints a result based on emojis from checking indices
 
 if guess_word == SECRET: 
     print("Woo! You got it!")
