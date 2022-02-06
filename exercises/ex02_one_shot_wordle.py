@@ -2,7 +2,7 @@
 
 __author__ = "730358970"
 
-SECRET: str = "python"  # initialization of variables, gathering input, and invalid input while loop
+SECRET: str = "farter"  # initialization of variables, gathering input, and invalid input while loop
 
 guess_word: str = input(f"What is your {len(SECRET)}-letter guess? ")
 
