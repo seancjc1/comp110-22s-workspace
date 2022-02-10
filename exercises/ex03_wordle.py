@@ -61,6 +61,7 @@ def main() -> None:  # declaration of the main function
     if win:  # if-else statement which determines output upon win or loss
         print(f"You won in {turns}/6 turns!")
     else:
+        print(f"The word was {SECRET}!")
         print("X/6 - Sorry, try again tomorrow!")
 
 
