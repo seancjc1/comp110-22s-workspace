@@ -1,4 +1,4 @@
-"""A dictionary for Exercise 06 - Dictionary Functions."""
+"""A set of dictionary-based functions for Exercise 06 - Dictionary Functions."""
 
 __author__ = "730358979"
 
@@ -11,7 +11,11 @@ def invert(dictionary: dict[str, str]) -> dict[str, str]:
 
 def favorite_color(colors: dict[str, str]) -> str:
     """Determines favorite color based on frequency in given dictionary."""
-    color: str = "green"
+    color: str = str()
     return color
 
-def count()
+
+def count(list: list[str]) -> dict[str, int]:
+    """Calculate number of times a string appears in a given list."""
+    frequency: dict[str, int] = dict()
+    return frequency
